@@ -15,6 +15,7 @@ import java.io.Serializable;
 @Table(name = "meal_dtos")
 public class MealDTO implements Serializable {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
     private Long id;
     @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
