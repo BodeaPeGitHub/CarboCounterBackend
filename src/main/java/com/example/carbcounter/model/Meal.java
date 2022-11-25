@@ -15,8 +15,8 @@ import java.io.Serializable;
 @Table(name = "meals")
 public class Meal implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
     private Long carbohydrates;
