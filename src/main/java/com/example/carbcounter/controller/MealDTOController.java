@@ -8,7 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("meals_dto")
+@RequestMapping("meal_dtos")
 public class MealDTOController {
     @Resource
     private MealDTOService mealDTOService;
