@@ -24,7 +24,7 @@ public class MealDTOController {
     }
 
     @PostMapping
-    public ResponseEntity<?> save(@RequestBody MealDTO mealDTO) {
-        return new ResponseEntity<>(mealDTOService.save(mealDTO), HttpStatus.OK);
+    public ResponseEntity<?> save(@RequestParam Long mealId, @RequestParam Double weight) {
+        return new ResponseEntity<>(mealDTOService.save(mealId, weight), HttpStatus.OK);
     }
 }
